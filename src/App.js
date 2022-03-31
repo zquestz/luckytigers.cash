@@ -32,11 +32,11 @@ export const StyledRoundButton = styled.button`
   padding: 10px;
   border-radius: 100%;
   border: none;
-  background-color: var(--primary);
+  background-color: white;
   padding: 10px;
   font-weight: bold;
   font-size: 15px;
-  color: var(--primary-text);
+  color: black;
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -228,7 +228,7 @@ function App() {
                 style={{
                   marginTop: "1em",
                 }}
-              >Leap into prosperity this coming year with Lucky Tigers, a limited edition series of 888 generative NFTs by Panny Chayapumh and Tighe Phillips. Each unique artwork features this year's celebrated zodiac creature, the tiger, along with varying symbols and motifs of good fortune.
+              >Leap into prosperity this coming year with Lucky Tigers, a limited edition series of 888 generative NFTs by Panny Chayapumh. Each unique artwork features this year's celebrated zodiac creature, the tiger, along with varying symbols and motifs of good fortune.
               </p>
             </s.TextDescription>
             <s.TextTitle
