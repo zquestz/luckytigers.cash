@@ -1,0 +1,40 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: luckytigers-ingress
+  namespace: default
+  annotations:
+    kubernetes.io/tls-acme: "true"
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  tls:
+  - hosts:
+    - www.luckytigers.cash
+    - luckytigers.cash
+    secretName: luckytigers-tls
+  defaultBackend:
+    service:
+      name: luckytigers
+      port:
+        number: 842
+  rules:
+  - host: luckytigers.cash
+    http:
+      paths:
+      - path: /
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: luckytigers
+            port:
+              number: 842
+  - host: www.luckytigers.cash
+    http:
+      paths:
+      - path: /
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: luckytigers
+            port:
+              number: 842

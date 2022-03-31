@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: default
+  labels:
+    service: luckytigers
+  name: luckytigers
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      service: luckytigers
+  template:
+    metadata:
+      labels:
+        service: luckytigers
+    spec:
+      containers:
+      - image: zquestz/luckytigers:latest
+        imagePullPolicy: Always
+        name: luckytigers
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "8Mi"
+      restartPolicy: Always

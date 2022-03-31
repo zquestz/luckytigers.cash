@@ -1,0 +1,19 @@
+{
+  "CONTRACT_ADDRESS": "0xSWAPME",
+  "SCAN_LINK": "https://www.smartscan.cash/address/0xSWAPME",
+  "NETWORK": {
+    "NAME": "SmartBCH",
+    "SYMBOL": "BCH",
+    "ID": 10000
+  },
+  "NFT_NAME": "Lucky Tigers",
+  "SYMBOL": "LKYT",
+  "MAX_SUPPLY": 888,
+  "WEI_COST": 14000000000000000,
+  "DISPLAY_COST": 0.014,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Oasis",
+  "MARKETPLACE_LINK": "https://oasis.cash/collection/0xSWAPME",
+  "SHOW_BACKGROUND": false,
+  "LAUNCH_DATE": "2022-04-02T17:00:00.000-08:00"
+}
