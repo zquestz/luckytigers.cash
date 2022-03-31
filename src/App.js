@@ -196,7 +196,7 @@ function App() {
           style={{
             maxWidth: "100%",
           }}
-          src="/flip.webp"
+          src="/flip.gif"
           alt="Lucky Tigers" />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.SideContainer flex={1} jc={"center"} ai={"center"}>
