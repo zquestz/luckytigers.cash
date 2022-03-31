@@ -16,7 +16,7 @@ spec:
         service: luckytigers
     spec:
       containers:
-      - image: zquestz/luckytigers:latest
+      - image: zquestz/luckytigers.cash:latest
         imagePullPolicy: Always
         name: luckytigers
         ports:
